@@ -1,0 +1,9 @@
+version: 2
+
+seeds:
+  - name: order_status
+    columns:
+      - name: status_code
+        tests:
+          - unique
+          - not_null

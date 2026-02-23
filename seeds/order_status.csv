@@ -1,0 +1,4 @@
+status_code,status_description
+completed,Order successfully completed
+cancelled,Order was cancelled
+pending,Order is pending
