@@ -1,9 +1,9 @@
-version: 2
-
 models:
-  - name: fact_orders
+  - name: kpi_sales
     columns:
-      - name: order_id
+      - name: order_date
         tests:
           - not_null
-          - unique
+      - name: total_revenue
+        tests:
+          - not_null
