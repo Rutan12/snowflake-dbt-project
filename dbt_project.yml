@@ -18,14 +18,11 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 
 models:
-  snowflake-dbt-project:   # ✅ MUST match name above
+  snowflake_dbt_project:
     staging:
-      +schema: staging
-      +materialized: view
-
+      +schema: "{{ target.name }}_staging"
     marts:
-      +schema: marts
-      +materialized: table
+      +schema: "{{ target.name }}_marts"
 
 
 
